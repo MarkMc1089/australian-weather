@@ -16,6 +16,7 @@ scatter_plot =
   filter(Location == "Brisbane") %>%
   ggplot(aes(x = Temp9am, y = Humidity9am)) +
   geom_point(colour = "purple") + 
+
   theme_minimal() +
   facet_wrap(~WindDir9am)
 
